@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 module "loganalytics" {
-  source                       = "./modules/log-analytics"
+  source                       = "./modules/loganalytics"
   log_analytics_workspace_name = "${var.app_name}la"
   location                     = var.location
   log_analytics_workspace_sku  = "PerGB2018"
